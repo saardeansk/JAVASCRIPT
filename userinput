@@ -32,8 +32,8 @@ input : process.stdin,
 });
 rl.question ("enter the value of a : ",(m) =>{
 rl.question("enter the value of b : ",(n) =>{
-     let a = Number(m)
-      let b = Number(n)
+     let a = Number(m);
+      let b = Number(n);
     if (!isNaN(a) && !isNaN(b))
     { 
          let sum = a + b
