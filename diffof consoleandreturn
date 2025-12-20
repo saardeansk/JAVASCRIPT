@@ -1,0 +1,12 @@
+console.log
+   print the task whaty your are telling inside the console.log("hai",a)
+return
+   just perform the certain opertion and storedd in another variable whether it is needed
+ex:
+
+ function retadd(a,b)
+{
+  return a+b
+}
+var ret =retadd(2,9)
+console.log(ret)
