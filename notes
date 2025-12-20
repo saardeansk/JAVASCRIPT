@@ -1,0 +1,116 @@
+    --------------------------------------------------------------------------- javascript learning---------------------------------------------------------------
+       basics
+            printing thre values:  console.log("")
+            extension:.js  
+           topics :
+                    1.VARIABLES
+                    2.operators
+                    3.datatypes
+  VARIABLES
+         Is the container to storing something like the data.
+         To declare the variables for using the three ways on it
+                ( *let = using only between the block only,value  can change. )            
+                 ( *const = using for set the value to be constant not to be anywhere)
+                 ( *var = declare and used anywhere within or without the block it can be used ,to change the value anywhere.)
+ex:
+   {var a= 10;                o?p:   10
+   }
+ console.log(a)
+   {
+    let a = 10;                o?p:   error (a is not defined)reason :it only acess in bet the block)
+}
+  console.log(a)
+ (const a=10;
+a=70;                          o?p :  error because iot not to change declared in the constant
+console.log(a)
+
+  const price = 30;
+  var productname = "sathish";
+   const tax= 10;
+console.log(productname)
+   var total= price+tax;
+console.log(total)
+  var fruitname = "apple"
+  var count = 5
+   var price = 100
+const total = price*count
+console.log(fruitname)
+console.log(total)
+
+    KEYWORDS
+       predefined words it have few code all ready written if frequently using thing by anyone 
+     COMMENTS
+       one thing defining the thing to user but not made any changes in output the code
+             single line comment(//...................)
+             multiline comment(/*---------------------*/)
+
+     OPERATORS
+  arithimitic opertor
+       Perform the operations between the operandsusing the operators.
+        +  addition
+        -  subtraction
+        *  multiplication
+        /  division
+        // floor division
+        %  modulo
+        ++ increament (++a preincreament,a++postincreament)
+        -- decreament (--a predecreament,a-- postdecreament)
+        etc.......
+   datatype
+     to define  what type of data should be stored in the variable.
+                      typeof()  
+        ex:    console.log(typeof(10))
+      types:
+           Primitive                                  
+           Non primitive
+      primitive:
+            boolean,string,null,undefined,number
+      non-primitive
+            object
+            array
+  functions
+       SYNTAX:
+         function functionname()
+            {
+              ----------
+             }
+ex:
+     const readline = require ('readline')
+const rl = readline.createInterface({
+    input : process.stdin,
+    output :process.stdout
+})
+rl.question("enter the value of a :" ,(a) =>{
+rl.question ("enter the value of b:",(b) =>{
+    let sar =  Number(a)
+     let mar = Number(b)
+function add()
+{   
+     sum = sar + mar
+     console.log(sum)
+}
+add()
+rl.close()
+});
+});
+       block of data it can stored and called when it needed need not rewrite the whole function in it
+
+ return and console purpose
+  return:
+    to done the thing what you defined in it  not print it. 
+  console:
+    only to print the value not any other operation can do.
+ex:
+       function retadd(a,b)
+   {
+   return a+b
+  }
+  var ret =retadd(2,9)
+  console.log(ret)
+   
+         
+
+
+         
+                  
+ 
