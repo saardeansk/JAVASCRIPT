@@ -1,0 +1,37 @@
+--------------------------------------------------------------getting the user input  using the functions -------------------------------------------------------------------------------------------
+const readline = require ('readline')
+const rl = readline.createInterface({
+    input : process.stdin,
+    output :process.stdout
+})
+rl.question("enter the value of a :" ,(a) =>{
+rl.question ("enter the value of b:",(b) =>{
+    let sar =  Number(a)
+     let mar = Number(b)
+function add()
+{   
+     sum = sar + mar
+     console.log(sum)
+}
+add()
+rl.close()
+});
+});
+------------------------------------------------------getting the input using the passing the parameter in  the function----------------------------------------------------------------------
+function add(a,b)
+{   
+     let sum = a + b
+     console.log(sum)
+}
+add(5,9)
+-----------------------------------------------------------normal input given in the program-------------------------------------------------------------------------------------------------
+var a=15
+var b= 70
+function add()
+{   
+     let c = 21
+     let sum = a + b +c
+     console.log(sum)
+}
+add()
+
