@@ -1,0 +1,22 @@
+-----------------------------------------------------------------if else-------------------------------------------------------------------------------------
+
+  const readline = require('readline')
+const rl = readline.createInterface ({
+    input: process.stdin,
+    output:process.stdout
+})
+rl.question("if it is raining tell yes or no : ",(a)=>{
+   if (a == "yes")
+   {
+
+    console.log("take the umberala")
+   }
+   else
+   {
+     console.log("not rainning")
+   }
+rl.close()
+})
+
+  -------------------------------------------------------------for loop----------------------------------------------------------------------------------------------
+  
