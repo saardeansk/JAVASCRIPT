@@ -1,0 +1,19 @@
+   ----------------------------------------------DOM--------------------------------------------------------------------------------------------
+<html>
+    <head>
+        <title>
+            hai
+        </title>
+    </head>
+    <body>
+        <h1 id = "h1">
+             HELLO WORLD
+        </h1>
+        <script>
+           var doc = document.getElementById("h1")
+            doc.textContent = "bye world"
+            console.log(doc.textContent)
+        </script>
+    </body>
+</html>
+     
