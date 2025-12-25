@@ -1,0 +1,24 @@
+-------------------------------------------------------------------used event----------------------------------------------------------------------------------------------------------------
+<html>
+    <head>
+        <title>
+            ff
+        </title>
+    </head>
+    <body>
+        <h1 id  ="friends" ></h1>
+        <button id ="butt1" onclick="mine(event)">praveen anna</button>
+        <button id ="butt2" onclick="mine(event)">suresh anna</button>
+        <button id ="butt3" onclick="mine(event)">Arun anna</button>
+        <script>
+                var h1=document.getElementById("friends");
+                 function mine(event){
+                
+
+                  h1.textContent =event.target.textContent;
+                 
+
+            }
+        </script>
+    </body>
+</html>
