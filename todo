@@ -1,0 +1,40 @@
+-------------------------------------------------------------------------- qquery selector------------------------------------------------------------------------------------
+<html>
+    <head>
+        <title>
+            toddo
+        </title>
+    </head>
+    <body>
+   <h1 id ="jj">bye1</h1>
+   <h1 id="jj">bye2</h1>
+   <h1 id ="jj">bye3</h1>
+   <script>
+    var selector =document.querySelector("#jj");
+    alert(selector.textContent)
+   </script>
+    </body>
+</html>
+
+--------------------------------------------------------------------------queryselectorall--------------------------------------------------------------------------------------------
+
+<html>
+    <head>
+        <title>
+            toddo
+        </title>
+    </head>
+    <body>
+   <h1 class="jj">bye1</h1>
+   <h1  class="jj">bye2</h1>
+   <h1 class ="jj">bye3</h1>
+   <script>
+    var selector =document.querySelectorAll(".jj");
+    for(var i=0;i<selector.length;i++)
+   {
+    alert(selector[i].textContent)
+   }
+   </script>
+    </body>
+
+</html>
