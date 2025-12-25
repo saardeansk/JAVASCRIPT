@@ -22,3 +22,38 @@
         </script>
     </body>
 </html>
+--------------------------------------------------------------------------------------------------------------------withouitusing event----------------------------
+
+
+<html>
+    <head>
+        <title>
+            ff
+        </title>
+    </head>
+    <body>
+        <h1 id  ="friends" ></h1>
+        <button id ="butt1" onclick="mine('show')">praveen anna</button>
+        <button id ="butt2" onclick="mine('showw')">suresh anna</button>
+        <button id ="butt3" onclick="mine('showww')">Arun anna</button>
+        <script>
+            function mine(type){
+                var friend = document.getElementById("friend");
+                if(type ==="show")
+                {
+                  h1.textContent ="praveen anna";
+                 }
+                elif(type ==="showw")
+                 {
+                 h1.textContent ="suresh anna";
+                 }
+                 elif(type==="showww")
+                 {
+                h1.textContent ="Arun anna";
+                 }
+
+            }
+        </script>
+    </body>
+</html>
+    
