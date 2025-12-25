@@ -22,6 +22,32 @@
         </script>
     </body>
 </html>
+
+---------------------------------------------2.event-------------------------------
+
+<html>
+    <head>
+        <title>
+            ggggg
+        </title>
+    </head>
+    <body>
+        <h1 onclick ="hai(event)">ONE </h1>
+        <h1 onclick ="hai(event)">TWO </h1>
+        <h1 onclick ="hai(event)">THREE </h1>
+        <h1 onclick ="hai(event)">FOUR</h1>
+        <h1 onclick ="hai(event)">FIVE </h1>
+        <h1 onclick ="hai(event)">SIX</h1>
+        <h1 onclick ="hai(event)">SEVEN </h1>
+        <h1 onclick ="hai(event)">EIGHT</h1>
+        <script>
+            function hai(event)
+            {
+                event.target.remove();
+            }
+        </script>
+    </body>
+</html>
 --------------------------------------------------------------------------------------------------------------------withouitusing event----------------------------
 
 
