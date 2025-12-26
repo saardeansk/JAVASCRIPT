@@ -39,3 +39,39 @@
 
 </html>
 ----------------------------------------------------------------------------all------------------------------------------------------------
+<html>
+    <head>
+        <title>
+            toddo
+        </title>
+    </head>
+    <body>
+   <h1 id="jj">bye1</h1>
+   <h1  id="jj">bye2</h1>
+   <h1 id ="jj">bye3</h1>
+   <h2 id="vv">hello</h2>
+   <h2 class="rs">hello friends</h2>
+   <h2 class="rs">hello friends</h2>
+   <h2 class="rs">hello friends</h2>
+   <h3 > hhh haaaa</h3>
+    <h3 > hhh haaaa</h3>
+     <h3 > hhh haaaa</h3>
+   <script>
+    var selector =document.querySelector("h1");
+    var select=document.querySelectorAll("h1");
+    var get = document.getElementById("vv");
+    var clas = document.getElementsByClassName("rs");
+    var tag =document.getElementsByTagName("h3");
+    for(var i=0;i<select.length;i++)
+   {
+    alert(select[i].textContent);
+    alert(clas[i].textContent);
+    alert(tag[i].textContent);
+
+   }
+    alert(selector.textContent);
+    alert(get.textContent);
+   </script>
+    </body>
+
+</html>
