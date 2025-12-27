@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>
+            JJJJ
+        </title>
+    </head>
+    <body>
+        <h5>  king of the forest</h5>
+         <button onclick="app()">append</button>
+         <button onclick ="pre()">prepend</button>
+         <button onclick ="insertAdjacent()">insertdifferent</button>
+        <button onclick ="insertAdjacent1()">insertdifferent1</button>
+        <button onclick ="insertAdjacent2()">insertdifferent2</button>
+         <button onclick ="insertAdjacent3()">insertdifferent3</button>
+        <script>
+            var nan=document.createElement("p");
+            nan.innerHTML = "i am sathish";
+            document.body.appendChild(nan);
+            var org=document.createElement("h2");
+            org.innerHTML="i from madurai";
+            var ggo=document.createElement("h5");
+            ggo.innerHTML ="we are going to chennai";
+            function app()
+            {
+                nan.append(org.cloneNode(true));
+                
+            }
+            //  why we want to go for this insert adaja=centhtml for printing repeativel like the loop  //using th eclone node in the append and prepend act like the insertadajacent
+            function insertAdjacent()
+            {
+                nan.insertAdjacentHTML("beforebegin","<p>sssssssss</p>")
+            }
+              function insertAdjacent2()
+            {
+                nan.insertAdjacentHTML("beforeend","<p>msdoni</p>")
+            }
+              function insertAdjacent1()
+            {
+                nan.insertAdjacentHTML("afterbegin","<p>jadaja</p>")
+            }
+             function insertAdjacent3()
+            {
+                nan.insertAdjacentHTML("afterend","<p>jadaja</p>")
+            }
+            //beforebegin → outside top
+             //afterbegin  → inside top
+            //beforeend   → inside bottom
+            //afterend    → outside bottom
+
+
+
+
+            function pre()
+            {
+                nan.prepend(ggo);
+            }
+        </script>
+    </body>
+</html>
