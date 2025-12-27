@@ -47,9 +47,6 @@
             //beforeend   → inside bottom
             //afterend    → outside bottom
 
-
-
-
             function pre()
             {
                 nan.prepend(ggo);
