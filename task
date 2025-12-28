@@ -1,3 +1,4 @@
+------------------------------------------------------------------task1-------------------------------------------------------------
 <input id="ir"placeholder="enter the vaue in string">
 <button onclick="add()">ADD</button>
 <button onclick="del()">DELETE</button>
