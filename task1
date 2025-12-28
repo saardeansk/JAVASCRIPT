@@ -1,21 +1,25 @@
-<input id ="ir">
-<button id="b1" onclick="add()">ADD</button>
-  <h1 id ="hr"></h1>
-<button id ="b2" onclick="del(event)">delete</button>
+<input id="ir"placeholder="enter the vaue in string">
+<button onclick="add()">ADD</button>
+<button onclick="del()">DELETE</button>
 <script>
-    var arrays=["sathish","arun"];
-    var ir=document.getElementById("ir");
-    var b1 = document.getElementById("b1");
-    var b2=document.getElementById("b2");
-    var hrr = document.getElementById("hr");
-    function add()
-    {   for(var i=0;i<array.length;i++)
-         {
-           hrr.textContent=arrays[i];
-        for(var i=arrays.length;i>0;i++)
-             { 
-              arrays[i]=ir.value;
-              }
-            }
+var arrays = ["sathish", "arun"];
+var ir = document.getElementById("ir");
+var hrr = document.createElement("hr");
+document.body.appendChild(hrr);
+hrr.innerHTML = arrays.join("<br>");
+function add() {
+    if (ir.value === "") return;
+    {
+    arrays.push(ir.value);          // ✅ correct way
+    hrr.innerHTML = arrays.join("<br>");
+    ir.value = "";
+    console.log(arrays);
     }
+}
+
+function del() {
+    arrays.pop();                   // remove last element
+    hrr.innerHTML = arrays.join("<br>");
+}
 </script>
+ 
