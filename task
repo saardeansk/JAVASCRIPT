@@ -1,26 +1,181 @@
-------------------------------------------------------------------task1-------------------------------------------------------------
-<input id="ir"placeholder="enter the vaue in string">
-<button onclick="add()">ADD</button>
-<button onclick="del()">DELETE</button>
-<script>
-var arrays = ["sathish", "arun"];
-var ir = document.getElementById("ir");
-var hrr = document.createElement("hr");
-document.body.appendChild(hrr);
-hrr.innerHTML = arrays.join("<br>");
-function add() {
-    if (ir.value === "") return;
-    {
-    arrays.push(ir.value);          // ✅ correct way
-    hrr.innerHTML = arrays.join("<br>");
-    ir.value = "";
-    console.log(arrays);
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form with History</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
     }
+
+    body {
+      background: #f4f6f8;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* FORM CARD */
+    form {
+      width: 420px;
+      margin: 30px auto;
+      padding: 25px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+
+    label {
+      display: inline-block;
+      width: 90px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    input, select {
+      width: calc(100% - 100px);
+      padding: 8px;
+      margin-bottom: 12px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    input[type="radio"] {
+      width: auto;
+      margin-left: 10px;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      background: #2eaf59;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #24934a;
+    }
+
+    #re {
+      text-align: center;
+      color: green;
+      margin-top: 15px;
+    }
+
+    /* TABLE */
+    table {
+      width: 90%;
+      margin: 30px auto;
+      border-collapse: collapse;
+      background: white;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+    }
+
+    th {
+      background: #2eaf59;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+<form>
+  <label>Name:</label>
+  <input id="inp" type="text" placeholder="Enter name"><br>
+
+  <label>Age:</label>
+  <input id="inp1" type="number" placeholder="Enter age"><br>
+
+  <label>Gender:</label>
+  <input type="radio" name="gender" value="Male"> Male
+  <input type="radio" name="gender" value="Female"> Female
+  <input type="radio" name="gender" value="Other"> Other<br><br>
+
+  <label>Course:</label>
+  <select id="cou">
+    <option value="">Select</option>
+    <option>JavaScript</option>
+    <option>HTML</option>
+    <option>CSS</option>
+    <option>React</option>
+    <option>TypeScript</option>
+  </select><br>
+
+  <label>Email:</label>
+  <input id="inp2" type="email" placeholder="Enter email"><br>
+
+  <button type="button" onclick="check()">Submit</button>
+  <button type="button" onclick="saveHistory()">History</button>
+</form>
+
+<h2 id="re"></h2>
+
+<table id="dataTable">
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Gender</th>
+    <th>Course</th>
+    <th>Email</th>
+  </tr>
+</table>
+
+<script>
+function check() {
+  var name = document.getElementById("inp").value.trim();
+  var age = document.getElementById("inp1").value.trim();
+  var email = document.getElementById("inp2").value.trim();
+  var course = document.getElementById("cou").value;
+  var gender = document.querySelector('input[name="gender"]:checked');
+
+  if (name === "" || age === "" || email === "" || course === "" || gender === null) {
+    alert("Please fill all values");
+  } else {
+    document.getElementById("re").textContent = "Form submitted successfully";
+  }
 }
 
-function del() {
-    arrays.pop();                   // remove last element
-    hrr.innerHTML = arrays.join("<br>");
+function saveHistory() {
+  var name = document.getElementById("inp").value.trim();
+  var age = document.getElementById("inp1").value.trim();
+  var email = document.getElementById("inp2").value.trim();
+  var course = document.getElementById("cou").value;
+  var gender = document.querySelector('input[name="gender"]:checked');
+
+  if (name === "" || age === "" || email === "" || course === "" || gender === null) {
+    alert("Please fill all values");
+    return;
+  }
+
+  var table = document.getElementById("dataTable");
+  var row = table.insertRow();
+
+  row.insertCell(0).innerText = name;
+  row.insertCell(1).innerText = age;
+  row.insertCell(2).innerText = gender.value;
+  row.insertCell(3).innerText = course;
+  row.insertCell(4).innerText = email;
+
+  // Clear inputs
+  document.getElementById("inp").value = "";
+  document.getElementById("inp1").value = "";
+  document.getElementById("inp2").value = "";
+  document.getElementById("cou").value = "";
+  gender.checked = false;
 }
 </script>
- 
+
+</body>
+</html>
