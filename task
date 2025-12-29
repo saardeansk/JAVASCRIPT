@@ -15,7 +15,7 @@
       padding: 0;
     }
 
-    /* FORM CARD */
+    
     form {
       width: 420px;
       margin: 30px auto;
