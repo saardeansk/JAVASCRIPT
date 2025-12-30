@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>
+            simple project
+        </title>
+        <style>
+         .s1{
+            width:100%;
+            height:100%;
+            background-color: red;
+            position:absolute;
+            top:0px;
+            left:0%;
+            opacity:0.8;
+
+
+        }
+        .s2{
+            position:absolute;
+            right:0%;
+            left:0%;
+            width:40%;
+            height:50%;
+            margin:auto;
+            background-color:white;
+            z-index:3;
+            color:green;
+        }
+        </style>
+    </head>
+    <body>
+        <button> ex</button>
+        <div class ="s1"></div>
+        <div class="s2">
+            <button>
+              show
+            </button>
+            <p>
+                simple project using the html,css,js
+            </p>
+        </div>
+    </body>
+</html>
