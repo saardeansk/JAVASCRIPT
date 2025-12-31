@@ -4,7 +4,7 @@
             hai
         </title>
     </head>
-    <body>
+    <body>//internal CSS 
         <style>
             div{
                 background-Color:black;
