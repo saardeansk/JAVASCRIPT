@@ -23,7 +23,7 @@
         <script>
             var  bx1 = document.getElementById("box")
          function func()
-          {
+          { 
             bx1.setAttribute("class","widthmax")
           }</script>
     </body>
