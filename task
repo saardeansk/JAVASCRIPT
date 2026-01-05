@@ -178,3 +178,29 @@ function saveHistory() {
 
 </body>
 </html>
+
+--------------------------------------------------------task2-----------------------------------------------------------------------------
+      ------------------------------------------------index.html----------------------------------------
+<html>
+    <head>
+    <title>
+       hai friends i am sathish   
+        </title>
+        <link rel ="stylesheet" href="ex.css">
+    </head>
+    <body>
+        <div class="hh">
+       <h1>
+         WELCOME TO  PLANTS65 VLOG
+       </h1></div>
+       <div class="ss">
+       <div class="sat">
+        <p>
+         <h1>
+           sat is treated as an HTML tag</h1>
+          CSS thinks sat is a tag name
+         But there is no  tag in HTML So nothing will appear 
+         </p></div></div>
+       <script src="ex.js"></script>
+    </body>
+</html>
