@@ -204,7 +204,7 @@ function saveHistory() {
        <script src="ex.js"></script>
     </body>
 </html>
------------------------------------------------------ex.js---------------------
+-----------------------------------------------------ex.js--------------------------------------------------
 
     var butt=document.getElementById("butt");
     var h3 = document.getElementById("h3");
