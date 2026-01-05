@@ -217,3 +217,25 @@ function saveHistory() {
     butt.addEventListener("click" , function() {
          window.location.href="https://www.youtube.com/watch?v=qC-X5MogTI0&list=RD2m70TJ07Ftc&index=20";
     });
+----------------------------------------------ex.css----------------------------------------
+.hh{
+ padding :10px;
+ background-color :red;
+ font-family:Times New Roman;
+ left:opx;
+ top:0px;
+ opacity:0.8;
+ text-align:center;
+ margin:0px;
+}
+.ss{
+    padding:30px;
+}
+.sat{
+    padding  :10px;
+    width:30%;
+    background-color:yellow;
+    color:black;
+    margin-top:"30px";
+    margin-left:"20px";
+}
