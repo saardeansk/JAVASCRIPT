@@ -204,3 +204,16 @@ function saveHistory() {
        <script src="ex.js"></script>
     </body>
 </html>
+-----------------------------------------------------ex.js---------------------
+
+    var butt=document.getElementById("butt");
+    var h3 = document.getElementById("h3");
+    butt.addEventListener("mouseover" , function() {
+       butt.textContent = "hai friends i am fro the salem";
+    });
+    butt.addEventListener("mouseout" , function() {
+        butt.textContent="test case";
+    });
+    butt.addEventListener("click" , function() {
+         window.location.href="https://www.youtube.com/watch?v=qC-X5MogTI0&list=RD2m70TJ07Ftc&index=20";
+    });
