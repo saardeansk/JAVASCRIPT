@@ -2,7 +2,6 @@
 <html>
 <head>
   <title>Form with History</title>
-
   <style>
     * {
       box-sizing: border-box;
