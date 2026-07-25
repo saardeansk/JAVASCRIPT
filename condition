@@ -6,7 +6,7 @@ const rl = readline.createInterface ({
     output:process.stdout
 })
 rl.question("if it is raining tell yes or no : ",(a)=>{
-   if (a == "yes")
+   if (a == "yes")   
    {
 
     console.log("take the umberala")
